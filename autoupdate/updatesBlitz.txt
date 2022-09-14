@@ -1,0 +1,15 @@
+;aiu;
+
+[Update]
+Name = Blitz Group App
+ProductVersion = 1.7.4.0
+URL = https://admin.blitzzgroup.com/BlitzGroupApp1-7-4.exe
+Size = 13345096
+SHA256 = 328D4A1B651720AEFD96A8BEA9B61C301BEADB232B1E180184588649D44AEA22
+MD5 = 469222bb472902d5778c96967ad083cd
+ServerFileName = BlitzGroupApp1-7-4.exe
+RegistryKey = HKUD\Software\NBService\Blitz Group App\Version
+Version = 1.7.4.0
+Feature = replaced 300 with 350 rrogen
+Feature1 = fixed called number with blacklist and double
+AutoCloseApplication = [ProgramFilesFolder]\NBService\Blitz Group App\BlitzGroupApp.exe

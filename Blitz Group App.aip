@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="16.5" version="16.5" Modules="professional" RootPath="." Language="en" Id="{5BA70F3E-D637-4010-B5E2-271872BA3BCD}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiJavaComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;ActSyncAppComponent;FixupComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_COLOR_DISABLED_TEXT" Value="3026478" MultiBuildValue="DefaultBuild:15461355" MsiKey="AI_COLOR_DISABLED_TEXT"/>
+    <ROW Property="AI_CONTROL_VISUAL_STYLE" Value="2960685;4276545;6776679;16176031" MultiBuildValue="DefaultBuild:16777215;15268607;2280703;2280703" MsiKey="AI_CONTROL_VISUAL_STYLE"/>
+    <ROW Property="AI_CONTROL_VISUAL_STYLE_EX" Value="1513239;3026478;3026478" MultiBuildValue="DefaultBuild:16514043;15461355;15461355" MsiKey="AI_CONTROL_VISUAL_STYLE_EX"/>
+    <ROW Property="AI_CONTROL_VISUAL_STYLE_FLAT" MultiBuildValue="DefaultBuild:15268607;15268607;15268607;2280703" MsiKey="AI_CONTROL_VISUAL_STYLE_FLAT"/>
+    <ROW Property="AI_EXTERNALUIUNINSTALLERNAME" MultiBuildValue="DefaultBuild:aiui"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_FrameBtnsColor" Value="metroblack" MultiBuildValue="DefaultBuild:metroyellow" MsiKey="AI_FrameBtnsColor"/>
+    <ROW Property="AI_FrameColor" Value="metroblack" MultiBuildValue="DefaultBuild:metroyellow" MsiKey="AI_FrameColor"/>
+    <ROW Property="AI_PRODUCTNAME_ARP" Value="Blitz Group App"/>
+    <ROW Property="AI_RUN_AS_ADMIN" Value="0"/>
+    <ROW Property="AI_ThemeStyle" Value="default" MultiBuildValue="DefaultBuild:metroyellow" MsiKey="AI_ThemeStyle"/>
+    <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPNOREPAIR" Value="1" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
+    <ROW Property="Manufacturer" Value="NBService"/>
+    <ROW Property="ProductCode" Value="1033:{BBD49366-CF2E-41B0-A8D6-B02D489CC7E4} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Blitz Group App"/>
+    <ROW Property="ProductVersion" Value="1.7.4" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{68F853CB-30C3-4689-8F90-AEF4B89DAA44}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="BlitzGroupApp_1_Dir" Directory_Parent="StartMenuFolder" DefaultDir="BLITZG~1|Blitz Group App"/>
+    <ROW Directory="BlitzGroupApp_Dir" Directory_Parent="ProgramFilesFolder" DefaultDir="BLITZG~1|Blitz Group App"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="ProgramFilesFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramFilesFolder" IsPseudoRoot="1"/>
+    <ROW Directory="StartMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="STARTM~1|StartMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="StartupFolder" Directory_Parent="TARGETDIR" DefaultDir="STARTU~1|StartupFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_CustomARPName" ComponentId="{63103455-105C-4D30-B7FC-F8E2B03E285B}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="AI_ExePath" ComponentId="{B2AA61DB-33A6-4CCE-9BFF-3D7BC63CB628}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="APPDIR" ComponentId="{DB0C26AE-03B9-4C31-95AA-471007DC25DF}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="BlitzGroupApp" ComponentId="{9E18750E-B323-4580-B870-99460780A796}" Directory_="BlitzGroupApp_1_Dir" Attributes="0"/>
+    <ROW Component="BlitzGroupApp.exe" ComponentId="{9935F958-0127-4104-906A-0B2D52B2C782}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="BlitzGroupApp.exe"/>
+    <ROW Component="BlitzGroupApp.exe.config" ComponentId="{7FA0AA73-77AC-49E2-B5BC-29E85D08D6FC}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="BlitzGroupApp.exe.config" Type="0"/>
+    <ROW Component="BouncyCastle.Crypto.dll" ComponentId="{450998A0-5986-450C-9E43-DD7F488979C2}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="BouncyCastle.Crypto.dll"/>
+    <ROW Component="EntityFramework.SqlServer.dll" ComponentId="{6A1512E7-FDD6-41BF-8527-B9F0539692AD}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="EntityFramework.SqlServer.dll"/>
+    <ROW Component="EntityFramework.dll" ComponentId="{4E83D4E2-818F-4E93-B54D-E7FBED34F0E6}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="EntityFramework.dll"/>
+    <ROW Component="FontAwesome.Sharp.dll" ComponentId="{CED25639-7D0B-4A10-8259-99CCD757C3C2}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="FontAwesome.Sharp.dll"/>
+    <ROW Component="Google.Protobuf.dll" ComponentId="{AEE8D759-5F70-441C-ADD4-9944CEA7BB14}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="Google.Protobuf.dll"/>
+    <ROW Component="Guna.UI2.dll" ComponentId="{6650E6FF-41BE-467A-9B23-0D73A6A29683}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="Guna.UI2.dll"/>
+    <ROW Component="K4os.Compression.LZ4.Streams.dll" ComponentId="{CE67EC0F-5879-43A4-AC29-FDB10B80707F}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="K4os.Compression.LZ4.Streams.dll"/>
+    <ROW Component="K4os.Compression.LZ4.dll" ComponentId="{15CEFB95-0753-415E-BCD7-B97FD8B66A7F}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="K4os.Compression.LZ4.dll"/>
+    <ROW Component="K4os.Hash.xxHash.dll" ComponentId="{1B00603E-DCD8-403C-896C-0FF9E6290D6D}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="K4os.Hash.xxHash.dll"/>
+    <ROW Component="Microsoft.Win32.Primitives.dll" ComponentId="{461B3474-B343-4BCA-95FD-29DF02C6E8AF}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="Microsoft.Win32.Primitives.dll"/>
+    <ROW Component="MySql.Data.EntityFramework.dll" ComponentId="{884B46C0-1F5A-4A87-8BE6-85247B290154}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="MySql.Data.EntityFramework.dll"/>
+    <ROW Component="MySql.Data.dll" ComponentId="{4A8532F9-4B9D-42B7-9369-7E8D8649D5ED}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="MySql.Data.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{BF361220-39AF-4347-8A2E-A89A156460E4}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="System.AppContext.dll" ComponentId="{BAD115A1-4E00-4733-821F-1455AF2D2C0B}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.AppContext.dll"/>
+    <ROW Component="System.Buffers.dll" ComponentId="{BDC3B588-EE06-4102-838A-2FE9EF6547CA}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Buffers.dll"/>
+    <ROW Component="System.Collections.Concurrent.dll" ComponentId="{A65890E9-FCE9-49BE-87F5-4D0622888A21}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Collections.Concurrent.dll"/>
+    <ROW Component="System.Collections.NonGeneric.dll" ComponentId="{A7EC7183-2AF8-4255-9C07-295EBB390C99}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Collections.NonGeneric.dll"/>
+    <ROW Component="System.Collections.Specialized.dll" ComponentId="{D13BE398-B974-4540-ADE9-9C122B4A3956}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Collections.Specialized.dll"/>
+    <ROW Component="System.Collections.dll" ComponentId="{2E0C1DD2-8256-4A40-BF85-DD3D171AD613}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Collections.dll"/>
+    <ROW Component="System.ComponentModel.Annotations.dll" ComponentId="{85EF078E-FF42-482C-A344-0C733A5D8474}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.ComponentModel.Annotations.dll"/>
+    <ROW Component="System.ComponentModel.EventBasedAsync.dll" ComponentId="{179CFF3E-F140-40B2-B446-5823C4455D69}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.ComponentModel.EventBasedAsync.dll"/>
+    <ROW Component="System.ComponentModel.Primitives.dll" ComponentId="{F9C76E2D-7A4A-4968-B689-FC85B26F3882}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.ComponentModel.Primitives.dll"/>
+    <ROW Component="System.ComponentModel.TypeConverter.dll" ComponentId="{F7A5A627-5288-409F-B744-A3060103C0F2}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.ComponentModel.TypeConverter.dll"/>
+    <ROW Component="System.ComponentModel.dll" ComponentId="{2F8482F7-E832-47CF-AC58-E8D84B371060}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.ComponentModel.dll"/>
+    <ROW Component="System.Console.dll" ComponentId="{92D74FAC-3D8D-4451-A093-409E01230825}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Console.dll"/>
+    <ROW Component="System.Data.Common.dll" ComponentId="{C985C145-EC7B-4E19-BE6E-E2369E375BC6}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Data.Common.dll"/>
+    <ROW Component="System.Diagnostics.Contracts.dll" ComponentId="{E496DC11-9655-4955-B5A7-06977C78B7B5}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Diagnostics.Contracts.dll"/>
+    <ROW Component="System.Diagnostics.Debug.dll" ComponentId="{7B1F0222-9383-46BF-834F-796E83DCE666}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Diagnostics.Debug.dll"/>
+    <ROW Component="System.Diagnostics.FileVersionInfo.dll" ComponentId="{42554D95-D1F2-4AD6-B15E-F62F3C9C16EB}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Diagnostics.FileVersionInfo.dll"/>
+    <ROW Component="System.Diagnostics.Process.dll" ComponentId="{98F4188B-5714-4785-B0A0-CFCE4ADB2068}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Diagnostics.Process.dll"/>
+    <ROW Component="System.Diagnostics.StackTrace.dll" ComponentId="{7EBCE8BD-C985-494E-9228-DB7347F875FB}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Diagnostics.StackTrace.dll"/>
+    <ROW Component="System.Diagnostics.TextWriterTraceListener.dll" ComponentId="{3507E921-E3A5-4A28-907F-5E4DB777BDE2}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Diagnostics.TextWriterTraceListener.dll"/>
+    <ROW Component="System.Diagnostics.Tools.dll" ComponentId="{98FF249E-BE7E-42BC-BE5A-0B9818EF3F8A}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Diagnostics.Tools.dll"/>
+    <ROW Component="System.Diagnostics.TraceSource.dll" ComponentId="{AA92D1BF-13CF-4BF1-A144-CEE909EE1697}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Diagnostics.TraceSource.dll"/>
+    <ROW Component="System.Diagnostics.Tracing.dll" ComponentId="{BA200841-20AE-475D-A858-70FD2D3DE601}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Diagnostics.Tracing.dll"/>
+    <ROW Component="System.Drawing.Primitives.dll" ComponentId="{48CF21FC-0708-4801-BD9A-AC7CAD0644F1}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Drawing.Primitives.dll"/>
+    <ROW Component="System.Dynamic.Runtime.dll" ComponentId="{61772BF9-E353-4830-A8D5-0CCB67BA42B8}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Dynamic.Runtime.dll"/>
+    <ROW Component="System.Globalization.Calendars.dll" ComponentId="{64BA127C-EE4C-4FE8-A7F9-35D9A30448CD}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Globalization.Calendars.dll"/>
+    <ROW Component="System.Globalization.Extensions.dll" ComponentId="{A3542733-28A3-43A4-9E50-D34C73C02CE0}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Globalization.Extensions.dll"/>
+    <ROW Component="System.Globalization.dll" ComponentId="{27632A6A-01A1-4190-BE3D-71B255F36AD6}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Globalization.dll"/>
+    <ROW Component="System.IO.Compression.FileSystem.dll" ComponentId="{68253F4D-BBF5-4B02-B4DA-272741FDB2CE}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.IO.Compression.FileSystem.dll"/>
+    <ROW Component="System.IO.Compression.ZipFile.dll" ComponentId="{DAF6596F-AE39-42B6-98CC-241EE2468347}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.IO.Compression.ZipFile.dll"/>
+    <ROW Component="System.IO.Compression.dll" ComponentId="{750C4D8C-9DB8-49D7-8DA6-C677960E7EBD}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.IO.Compression.dll"/>
+    <ROW Component="System.IO.FileSystem.DriveInfo.dll" ComponentId="{5C32520F-2364-4713-8D70-88418D36D8AB}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.IO.FileSystem.DriveInfo.dll"/>
+    <ROW Component="System.IO.FileSystem.Primitives.dll" ComponentId="{A772761C-CA6E-4D4E-9CD1-04E11A439C37}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.IO.FileSystem.Primitives.dll"/>
+    <ROW Component="System.IO.FileSystem.Watcher.dll" ComponentId="{1E0168F7-A2EC-4A43-9A26-46AEA22D8301}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.IO.FileSystem.Watcher.dll"/>
+    <ROW Component="System.IO.FileSystem.dll" ComponentId="{BEAC187A-C0DB-4292-8253-EA5EA95F3E20}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.IO.FileSystem.dll"/>
+    <ROW Component="System.IO.IsolatedStorage.dll" ComponentId="{64ABC738-7A6C-4C8D-AD76-8A76E6456D6B}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.IO.IsolatedStorage.dll"/>
+    <ROW Component="System.IO.MemoryMappedFiles.dll" ComponentId="{E4ECA063-DE43-4E8C-82D0-34861C79FB91}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.IO.MemoryMappedFiles.dll"/>
+    <ROW Component="System.IO.Pipes.dll" ComponentId="{E9830EF9-3451-4C68-AED8-75AA15EE0100}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.IO.Pipes.dll"/>
+    <ROW Component="System.IO.UnmanagedMemoryStream.dll" ComponentId="{5AECEA0E-3F5B-40E2-8BBD-C3A00AA8B94B}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.IO.UnmanagedMemoryStream.dll"/>
+    <ROW Component="System.IO.dll" ComponentId="{BA35A2D2-90B7-431C-BEE4-E6187119ADC0}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.IO.dll"/>
+    <ROW Component="System.Linq.Expressions.dll" ComponentId="{92FA139D-26EE-4813-83F5-5E7B52CEDE44}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Linq.Expressions.dll"/>
+    <ROW Component="System.Linq.Parallel.dll" ComponentId="{F48CEC2B-D1A4-47C5-B3D2-859E1B27825F}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Linq.Parallel.dll"/>
+    <ROW Component="System.Linq.Queryable.dll" ComponentId="{691CBB06-241B-4807-839C-CA1F06BD7386}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Linq.Queryable.dll"/>
+    <ROW Component="System.Linq.dll" ComponentId="{604D3137-8057-42CA-96A1-2185EF667A2F}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Linq.dll"/>
+    <ROW Component="System.Memory.dll" ComponentId="{F9FA0D9B-0414-40DE-9FEE-316160045C8E}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Memory.dll"/>
+    <ROW Component="System.Net.Http.Rtc.dll" ComponentId="{3DC0B744-7C70-4FE3-8DE3-32A4176B1BCC}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Net.Http.Rtc.dll"/>
+    <ROW Component="System.Net.Http.WebRequest.dll" ComponentId="{08B04745-FE0D-40C6-8760-C8290B751762}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Net.Http.WebRequest.dll"/>
+    <ROW Component="System.Net.Http.dll" ComponentId="{14E90C8A-004C-4828-B1C8-9D3FF788E6AC}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Net.Http.dll"/>
+    <ROW Component="System.Net.NameResolution.dll" ComponentId="{05F495A5-628B-4F94-8296-502E5C9E40E7}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Net.NameResolution.dll"/>
+    <ROW Component="System.Net.NetworkInformation.dll" ComponentId="{5C3A5DC3-B715-4264-A129-88D6DC45E6AF}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Net.NetworkInformation.dll"/>
+    <ROW Component="System.Net.Ping.dll" ComponentId="{B6833E49-8377-423F-AE88-96C81CC7BDE7}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Net.Ping.dll"/>
+    <ROW Component="System.Net.Primitives.dll" ComponentId="{9382E34C-852F-4B05-95DA-479CAF7B70AE}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Net.Primitives.dll"/>
+    <ROW Component="System.Net.Requests.dll" ComponentId="{C31D46E2-0BC8-4187-B20B-DC7FDAA62941}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Net.Requests.dll"/>
+    <ROW Component="System.Net.Security.dll" ComponentId="{9E7BAD2B-871A-49A7-B122-DD94BEA413C0}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Net.Security.dll"/>
+    <ROW Component="System.Net.Sockets.dll" ComponentId="{0820CCB0-4BEE-4818-801A-B959FB4305F4}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Net.Sockets.dll"/>
+    <ROW Component="System.Net.WebHeaderCollection.dll" ComponentId="{F67F6A97-6848-43E9-B2FD-AD5811B0E0CE}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Net.WebHeaderCollection.dll"/>
+    <ROW Component="System.Net.WebSockets.Client.dll" ComponentId="{5B0DBCB7-8416-4476-94DB-FF1C42572571}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Net.WebSockets.Client.dll"/>
+    <ROW Component="System.Net.WebSockets.dll" ComponentId="{47AD5B01-275D-4280-A325-CDBE6A8F479B}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Net.WebSockets.dll"/>
+    <ROW Component="System.Numerics.Vectors.dll" ComponentId="{C78E2920-E585-4A4B-A43F-8502C6687412}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Numerics.Vectors.dll"/>
+    <ROW Component="System.ObjectModel.dll" ComponentId="{55ACB1BE-2B42-4A60-9EE7-C3DBF5090571}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.ObjectModel.dll"/>
+    <ROW Component="System.Reflection.Emit.ILGeneration.dll" ComponentId="{2B852627-AA80-4874-A429-649530819FCC}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Reflection.Emit.ILGeneration.dll"/>
+    <ROW Component="System.Reflection.Emit.Lightweight.dll" ComponentId="{F6014968-FF34-4F80-B960-39320D21BB1F}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Reflection.Emit.Lightweight.dll"/>
+    <ROW Component="System.Reflection.Emit.dll" ComponentId="{EEC06770-B493-41E1-A3A2-4B4035A02B3F}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Reflection.Emit.dll"/>
+    <ROW Component="System.Reflection.Extensions.dll" ComponentId="{9B90A4EC-6604-4455-8359-34576A0236A8}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Reflection.Extensions.dll"/>
+    <ROW Component="System.Reflection.Primitives.dll" ComponentId="{86B4D34D-CD88-4CE7-B855-39B11DA3A304}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Reflection.Primitives.dll"/>
+    <ROW Component="System.Reflection.dll" ComponentId="{E4EAA964-BF97-4BEA-BCFA-244FF6E55F46}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Reflection.dll"/>
+    <ROW Component="System.Resources.Reader.dll" ComponentId="{63E3466B-EE11-4137-9D9B-C1C225996471}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Resources.Reader.dll"/>
+    <ROW Component="System.Resources.ResourceManager.dll" ComponentId="{07696A9A-910A-4228-80AB-157AE2DEC4D7}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Resources.ResourceManager.dll"/>
+    <ROW Component="System.Resources.Writer.dll" ComponentId="{7B2D6739-2040-4D74-91E1-070618A30900}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Resources.Writer.dll"/>
+    <ROW Component="System.Runtime.CompilerServices.Unsafe.dll" ComponentId="{0677EA14-6C98-43BA-8703-7CE64C78EB76}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW Component="System.Runtime.CompilerServices.VisualC.dll" ComponentId="{C073E48F-A840-45DA-9B5D-71456F67E5B5}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Runtime.CompilerServices.VisualC.dll"/>
+    <ROW Component="System.Runtime.Extensions.dll" ComponentId="{0E6D2779-61AA-40F9-AD28-B2E652FB31CC}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Runtime.Extensions.dll"/>
+    <ROW Component="System.Runtime.Handles.dll" ComponentId="{341112C1-990B-485B-81A5-68C5F2C96699}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Runtime.Handles.dll"/>
+    <ROW Component="System.Runtime.InteropServices.RuntimeInformation.dll" ComponentId="{7D56E697-53F7-4546-8B95-A37BFF533B33}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Runtime.InteropServices.RuntimeInformation.dll"/>
+    <ROW Component="System.Runtime.InteropServices.WindowsRuntime.dll" ComponentId="{C49D8B32-D807-4916-A1C0-7B5F225C4680}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Runtime.InteropServices.WindowsRuntime.dll"/>
+    <ROW Component="System.Runtime.InteropServices.dll" ComponentId="{686CFDF2-C12D-43C7-9715-4493375725CE}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Runtime.InteropServices.dll"/>
+    <ROW Component="System.Runtime.Numerics.dll" ComponentId="{310FD7A9-B180-43CE-B9AB-75DBE57490D0}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Runtime.Numerics.dll"/>
+    <ROW Component="System.Runtime.Serialization.Formatters.dll" ComponentId="{F003696F-FFD4-46BD-91D5-0ADC758697E6}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Runtime.Serialization.Formatters.dll"/>
+    <ROW Component="System.Runtime.Serialization.Json.dll" ComponentId="{21028875-394E-4343-9A82-1D0ED561EBC6}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Runtime.Serialization.Json.dll"/>
+    <ROW Component="System.Runtime.Serialization.Primitives.dll" ComponentId="{B64BEB06-AD79-4F40-B364-EA114E059C46}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Runtime.Serialization.Primitives.dll"/>
+    <ROW Component="System.Runtime.Serialization.Xml.dll" ComponentId="{C66B3535-2E4E-43BC-A926-32783331646A}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Runtime.Serialization.Xml.dll"/>
+    <ROW Component="System.Runtime.dll" ComponentId="{A8940FDC-63A2-4E55-87BA-91BC93FD7164}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Runtime.dll"/>
+    <ROW Component="System.Security.Claims.dll" ComponentId="{97EB9902-791F-42E8-810C-9D3DF7D8F56F}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Security.Claims.dll"/>
+    <ROW Component="System.Security.Cryptography.Algorithms.dll" ComponentId="{D88E282C-33DA-4086-B072-8FD2BBF791B1}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Algorithms.dll"/>
+    <ROW Component="System.Security.Cryptography.Csp.dll" ComponentId="{7FAB2AE8-B39A-4BB3-B4E5-94BEED843FBC}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Csp.dll"/>
+    <ROW Component="System.Security.Cryptography.Encoding.dll" ComponentId="{5F5F4E3A-1D43-4E17-B89C-506DC2BF33B3}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Encoding.dll"/>
+    <ROW Component="System.Security.Cryptography.Primitives.dll" ComponentId="{81C79AA5-B998-4E89-A15C-58C538F381F8}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Primitives.dll"/>
+    <ROW Component="System.Security.Cryptography.X509Certificates.dll" ComponentId="{FA1BC4A3-90AE-4655-B2F2-6303EF8D660A}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Security.Cryptography.X509Certificates.dll"/>
+    <ROW Component="System.Security.Principal.dll" ComponentId="{B16B0BE7-67FF-4C9A-A789-0A4957D23BA9}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Security.Principal.dll"/>
+    <ROW Component="System.Security.SecureString.dll" ComponentId="{E47A2E52-2FC9-45E0-AA79-A5F555FAD8F6}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Security.SecureString.dll"/>
+    <ROW Component="System.ServiceModel.Duplex.dll" ComponentId="{D6A2A54A-CB24-478A-A759-F6F6883AC1E9}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.ServiceModel.Duplex.dll"/>
+    <ROW Component="System.ServiceModel.Http.dll" ComponentId="{0CE00D1E-A20F-4AAE-A8B4-3CC5BB4CB11D}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.ServiceModel.Http.dll"/>
+    <ROW Component="System.ServiceModel.NetTcp.dll" ComponentId="{C146274E-77FD-4F8C-91A2-DE83E385AF51}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.ServiceModel.NetTcp.dll"/>
+    <ROW Component="System.ServiceModel.Primitives.dll" ComponentId="{85AF13BE-204D-461B-A17D-D75E28FBBC0B}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.ServiceModel.Primitives.dll"/>
+    <ROW Component="System.ServiceModel.Security.dll" ComponentId="{89E072C1-173E-4E49-8B86-9327EB6055BA}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.ServiceModel.Security.dll"/>
+    <ROW Component="System.Text.Encoding.Extensions.dll" ComponentId="{32E53E0A-A3E5-4500-BBF5-EAC62A1078FC}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Text.Encoding.Extensions.dll"/>
+    <ROW Component="System.Text.Encoding.dll" ComponentId="{CD7A6FF5-5127-40D9-9E5C-6AA85482FFCF}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Text.Encoding.dll"/>
+    <ROW Component="System.Text.RegularExpressions.dll" ComponentId="{B51D91E7-F199-4C71-AD1B-C9513F1749EE}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Text.RegularExpressions.dll"/>
+    <ROW Component="System.Threading.Overlapped.dll" ComponentId="{AB7140EA-EFFD-4006-A31A-438BB899D69D}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Threading.Overlapped.dll"/>
+    <ROW Component="System.Threading.Tasks.Parallel.dll" ComponentId="{C24542A0-BC5E-4CF9-A266-F85E9E2FA0F3}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Threading.Tasks.Parallel.dll"/>
+    <ROW Component="System.Threading.Tasks.dll" ComponentId="{D7E2B0B4-E0E3-43F9-9FE2-FE768E09245C}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Threading.Tasks.dll"/>
+    <ROW Component="System.Threading.Thread.dll" ComponentId="{827E32F1-9BE6-4A70-92E4-6721032C3A9C}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Threading.Thread.dll"/>
+    <ROW Component="System.Threading.ThreadPool.dll" ComponentId="{733DA68B-EA5C-4A63-995B-8E76AE756CB9}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Threading.ThreadPool.dll"/>
+    <ROW Component="System.Threading.Timer.dll" ComponentId="{A7F1E1DD-63D3-42D5-B355-D5B5938CDE4C}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Threading.Timer.dll"/>
+    <ROW Component="System.Threading.dll" ComponentId="{FDD6B975-646E-4848-9CEC-E83A34EBE2E0}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Threading.dll"/>
+    <ROW Component="System.ValueTuple.dll" ComponentId="{FBB0690B-4BE4-4346-8964-D88D0F92FE11}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.ValueTuple.dll"/>
+    <ROW Component="System.Xml.ReaderWriter.dll" ComponentId="{220ACE8F-7C35-45AD-9B4E-144C7FAEC9F9}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Xml.ReaderWriter.dll"/>
+    <ROW Component="System.Xml.XDocument.dll" ComponentId="{33955A18-0D37-4B0D-902C-ED4EC97C31A7}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Xml.XDocument.dll"/>
+    <ROW Component="System.Xml.XPath.XDocument.dll" ComponentId="{60B1F241-5632-4805-B019-B2E35FE6E561}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Xml.XPath.XDocument.dll"/>
+    <ROW Component="System.Xml.XPath.dll" ComponentId="{7B23E23E-35C9-4AF0-807D-AAE3C4447AF4}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Xml.XPath.dll"/>
+    <ROW Component="System.Xml.XmlDocument.dll" ComponentId="{C123BBDA-31E3-49E3-A6AE-90C6E0052A1F}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Xml.XmlDocument.dll"/>
+    <ROW Component="System.Xml.XmlSerializer.dll" ComponentId="{8ABECA9B-35B2-4D08-9AD7-3CCFAB433E68}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="System.Xml.XmlSerializer.dll"/>
+    <ROW Component="Ubiety.Dns.Core.dll" ComponentId="{9ACD143B-7616-414C-8526-BB5BB710DEE0}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="Ubiety.Dns.Core.dll"/>
+    <ROW Component="Zstandard.Net.dll" ComponentId="{7A751A93-A1A2-4F7C-B3D7-EE314EEEB19D}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="Zstandard.Net.dll"/>
+    <ROW Component="netstandard.dll" ComponentId="{7F4A0636-2FFB-4629-AB5A-5539F677D9E3}" Directory_="BlitzGroupApp_Dir" Attributes="0" KeyPath="netstandard.dll"/>
+    <ROW Component="updater.exe" ComponentId="{01AE2A0B-FB69-4723-A1A2-AF734544586F}" Directory_="APPDIR" Attributes="0" KeyPath="updater.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="updater.exe" Component_="updater.exe" FileName="BLITZG~1.EXE|BlitzGroupUpdate.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_STUBS&gt;updater.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="EntityFramework.dll" Component_="EntityFramework.dll" FileName="ENTITY~1.DLL|EntityFramework.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\EntityFramework.dll" SelfReg="false"/>
+    <ROW File="EntityFramework.SqlServer.dll" Component_="EntityFramework.SqlServer.dll" FileName="ENTITY~2.DLL|EntityFramework.SqlServer.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\EntityFramework.SqlServer.dll" SelfReg="false"/>
+    <ROW File="FontAwesome.Sharp.dll" Component_="FontAwesome.Sharp.dll" FileName="FONTAW~1.DLL|FontAwesome.Sharp.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\FontAwesome.Sharp.dll" SelfReg="false"/>
+    <ROW File="Google.Protobuf.dll" Component_="Google.Protobuf.dll" FileName="GOOGLE~1.DLL|Google.Protobuf.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\Google.Protobuf.dll" SelfReg="false"/>
+    <ROW File="Guna.UI2.dll" Component_="Guna.UI2.dll" FileName="GUNAUI~1.DLL|Guna.UI2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\Guna.UI2.dll" SelfReg="false"/>
+    <ROW File="K4os.Compression.LZ4.dll" Component_="K4os.Compression.LZ4.dll" FileName="K4OSCO~1.DLL|K4os.Compression.LZ4.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\K4os.Compression.LZ4.dll" SelfReg="false"/>
+    <ROW File="K4os.Compression.LZ4.Streams.dll" Component_="K4os.Compression.LZ4.Streams.dll" FileName="K4OSCO~2.DLL|K4os.Compression.LZ4.Streams.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\K4os.Compression.LZ4.Streams.dll" SelfReg="false"/>
+    <ROW File="K4os.Hash.xxHash.dll" Component_="K4os.Hash.xxHash.dll" FileName="K4OSHA~1.DLL|K4os.Hash.xxHash.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\K4os.Hash.xxHash.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Win32.Primitives.dll" Component_="Microsoft.Win32.Primitives.dll" FileName="MICROS~1.DLL|Microsoft.Win32.Primitives.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\Microsoft.Win32.Primitives.dll" SelfReg="false"/>
+    <ROW File="MySql.Data.dll" Component_="MySql.Data.dll" FileName="MYSQLD~1.DLL|MySql.Data.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\MySql.Data.dll" SelfReg="false"/>
+    <ROW File="MySql.Data.EntityFramework.dll" Component_="MySql.Data.EntityFramework.dll" FileName="MYSQLD~2.DLL|MySql.Data.EntityFramework.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\MySql.Data.EntityFramework.dll" SelfReg="false"/>
+    <ROW File="netstandard.dll" Component_="netstandard.dll" FileName="NETSTA~1.DLL|netstandard.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\netstandard.dll" SelfReg="false"/>
+    <ROW File="System.AppContext.dll" Component_="System.AppContext.dll" FileName="SYSTEM~1.DLL|System.AppContext.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.AppContext.dll" SelfReg="false"/>
+    <ROW File="System.Buffers.dll" Component_="System.Buffers.dll" FileName="SYSTEM~2.DLL|System.Buffers.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Buffers.dll" SelfReg="false"/>
+    <ROW File="System.Collections.Concurrent.dll" Component_="System.Collections.Concurrent.dll" FileName="SYSTEM~3.DLL|System.Collections.Concurrent.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Collections.Concurrent.dll" SelfReg="false"/>
+    <ROW File="System.Collections.dll" Component_="System.Collections.dll" FileName="SYSTEM~4.DLL|System.Collections.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Collections.dll" SelfReg="false"/>
+    <ROW File="System.Collections.NonGeneric.dll" Component_="System.Collections.NonGeneric.dll" FileName="SYSTEM~5.DLL|System.Collections.NonGeneric.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Collections.NonGeneric.dll" SelfReg="false"/>
+    <ROW File="System.Collections.Specialized.dll" Component_="System.Collections.Specialized.dll" FileName="SYSTEM~6.DLL|System.Collections.Specialized.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Collections.Specialized.dll" SelfReg="false"/>
+    <ROW File="System.ComponentModel.Annotations.dll" Component_="System.ComponentModel.Annotations.dll" FileName="SYSTEM~7.DLL|System.ComponentModel.Annotations.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.ComponentModel.Annotations.dll" SelfReg="false"/>
+    <ROW File="System.ComponentModel.dll" Component_="System.ComponentModel.dll" FileName="SYSTEM~8.DLL|System.ComponentModel.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.ComponentModel.dll" SelfReg="false"/>
+    <ROW File="System.ComponentModel.EventBasedAsync.dll" Component_="System.ComponentModel.EventBasedAsync.dll" FileName="SYSTEM~9.DLL|System.ComponentModel.EventBasedAsync.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.ComponentModel.EventBasedAsync.dll" SelfReg="false"/>
+    <ROW File="System.ComponentModel.Primitives.dll" Component_="System.ComponentModel.Primitives.dll" FileName="SYSTE~10.DLL|System.ComponentModel.Primitives.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.ComponentModel.Primitives.dll" SelfReg="false"/>
+    <ROW File="System.ComponentModel.TypeConverter.dll" Component_="System.ComponentModel.TypeConverter.dll" FileName="SYSTE~11.DLL|System.ComponentModel.TypeConverter.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.ComponentModel.TypeConverter.dll" SelfReg="false"/>
+    <ROW File="System.Console.dll" Component_="System.Console.dll" FileName="SYSTE~12.DLL|System.Console.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Console.dll" SelfReg="false"/>
+    <ROW File="System.Data.Common.dll" Component_="System.Data.Common.dll" FileName="SYSTE~13.DLL|System.Data.Common.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Data.Common.dll" SelfReg="false"/>
+    <ROW File="System.Diagnostics.Contracts.dll" Component_="System.Diagnostics.Contracts.dll" FileName="SYSTE~14.DLL|System.Diagnostics.Contracts.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Diagnostics.Contracts.dll" SelfReg="false"/>
+    <ROW File="System.Diagnostics.Debug.dll" Component_="System.Diagnostics.Debug.dll" FileName="SYSTE~15.DLL|System.Diagnostics.Debug.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Diagnostics.Debug.dll" SelfReg="false"/>
+    <ROW File="System.Diagnostics.FileVersionInfo.dll" Component_="System.Diagnostics.FileVersionInfo.dll" FileName="SYSTE~16.DLL|System.Diagnostics.FileVersionInfo.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Diagnostics.FileVersionInfo.dll" SelfReg="false"/>
+    <ROW File="System.Diagnostics.Process.dll" Component_="System.Diagnostics.Process.dll" FileName="SYSTE~17.DLL|System.Diagnostics.Process.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Diagnostics.Process.dll" SelfReg="false"/>
+    <ROW File="System.Diagnostics.StackTrace.dll" Component_="System.Diagnostics.StackTrace.dll" FileName="SYSTE~18.DLL|System.Diagnostics.StackTrace.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Diagnostics.StackTrace.dll" SelfReg="false"/>
+    <ROW File="System.Diagnostics.TextWriterTraceListener.dll" Component_="System.Diagnostics.TextWriterTraceListener.dll" FileName="SYSTE~19.DLL|System.Diagnostics.TextWriterTraceListener.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Diagnostics.TextWriterTraceListener.dll" SelfReg="false"/>
+    <ROW File="System.Diagnostics.Tools.dll" Component_="System.Diagnostics.Tools.dll" FileName="SYSTE~20.DLL|System.Diagnostics.Tools.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Diagnostics.Tools.dll" SelfReg="false"/>
+    <ROW File="System.Diagnostics.TraceSource.dll" Component_="System.Diagnostics.TraceSource.dll" FileName="SYSTE~21.DLL|System.Diagnostics.TraceSource.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Diagnostics.TraceSource.dll" SelfReg="false"/>
+    <ROW File="System.Diagnostics.Tracing.dll" Component_="System.Diagnostics.Tracing.dll" FileName="SYSTE~22.DLL|System.Diagnostics.Tracing.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Diagnostics.Tracing.dll" SelfReg="false"/>
+    <ROW File="System.Drawing.Primitives.dll" Component_="System.Drawing.Primitives.dll" FileName="SYSTE~23.DLL|System.Drawing.Primitives.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Drawing.Primitives.dll" SelfReg="false"/>
+    <ROW File="System.Dynamic.Runtime.dll" Component_="System.Dynamic.Runtime.dll" FileName="SYSTE~24.DLL|System.Dynamic.Runtime.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Dynamic.Runtime.dll" SelfReg="false"/>
+    <ROW File="System.Globalization.Calendars.dll" Component_="System.Globalization.Calendars.dll" FileName="SYSTE~25.DLL|System.Globalization.Calendars.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Globalization.Calendars.dll" SelfReg="false"/>
+    <ROW File="System.Globalization.dll" Component_="System.Globalization.dll" FileName="SYSTE~26.DLL|System.Globalization.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Globalization.dll" SelfReg="false"/>
+    <ROW File="System.Globalization.Extensions.dll" Component_="System.Globalization.Extensions.dll" FileName="SYSTE~27.DLL|System.Globalization.Extensions.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Globalization.Extensions.dll" SelfReg="false"/>
+    <ROW File="System.IO.Compression.dll" Component_="System.IO.Compression.dll" FileName="SYSTE~28.DLL|System.IO.Compression.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.IO.Compression.dll" SelfReg="false"/>
+    <ROW File="System.IO.Compression.FileSystem.dll" Component_="System.IO.Compression.FileSystem.dll" FileName="SYSTE~29.DLL|System.IO.Compression.FileSystem.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.IO.Compression.FileSystem.dll" SelfReg="false"/>
+    <ROW File="System.IO.Compression.ZipFile.dll" Component_="System.IO.Compression.ZipFile.dll" FileName="SYSTE~30.DLL|System.IO.Compression.ZipFile.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.IO.Compression.ZipFile.dll" SelfReg="false"/>
+    <ROW File="System.IO.dll" Component_="System.IO.dll" FileName="SYSTE~31.DLL|System.IO.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.IO.dll" SelfReg="false"/>
+    <ROW File="System.IO.FileSystem.dll" Component_="System.IO.FileSystem.dll" FileName="SYSTE~32.DLL|System.IO.FileSystem.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.IO.FileSystem.dll" SelfReg="false"/>
+    <ROW File="System.IO.FileSystem.DriveInfo.dll" Component_="System.IO.FileSystem.DriveInfo.dll" FileName="SYSTE~33.DLL|System.IO.FileSystem.DriveInfo.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.IO.FileSystem.DriveInfo.dll" SelfReg="false"/>
+    <ROW File="System.IO.FileSystem.Primitives.dll" Component_="System.IO.FileSystem.Primitives.dll" FileName="SYSTE~34.DLL|System.IO.FileSystem.Primitives.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.IO.FileSystem.Primitives.dll" SelfReg="false"/>
+    <ROW File="System.IO.FileSystem.Watcher.dll" Component_="System.IO.FileSystem.Watcher.dll" FileName="SYSTE~35.DLL|System.IO.FileSystem.Watcher.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.IO.FileSystem.Watcher.dll" SelfReg="false"/>
+    <ROW File="System.IO.IsolatedStorage.dll" Component_="System.IO.IsolatedStorage.dll" FileName="SYSTE~36.DLL|System.IO.IsolatedStorage.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.IO.IsolatedStorage.dll" SelfReg="false"/>
+    <ROW File="System.IO.MemoryMappedFiles.dll" Component_="System.IO.MemoryMappedFiles.dll" FileName="SYSTE~37.DLL|System.IO.MemoryMappedFiles.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.IO.MemoryMappedFiles.dll" SelfReg="false"/>
+    <ROW File="System.IO.Pipes.dll" Component_="System.IO.Pipes.dll" FileName="SYSTE~38.DLL|System.IO.Pipes.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.IO.Pipes.dll" SelfReg="false"/>
+    <ROW File="System.IO.UnmanagedMemoryStream.dll" Component_="System.IO.UnmanagedMemoryStream.dll" FileName="SYSTE~39.DLL|System.IO.UnmanagedMemoryStream.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.IO.UnmanagedMemoryStream.dll" SelfReg="false"/>
+    <ROW File="System.Linq.dll" Component_="System.Linq.dll" FileName="SYSTE~40.DLL|System.Linq.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Linq.dll" SelfReg="false"/>
+    <ROW File="System.Linq.Expressions.dll" Component_="System.Linq.Expressions.dll" FileName="SYSTE~41.DLL|System.Linq.Expressions.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Linq.Expressions.dll" SelfReg="false"/>
+    <ROW File="System.Linq.Parallel.dll" Component_="System.Linq.Parallel.dll" FileName="SYSTE~42.DLL|System.Linq.Parallel.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Linq.Parallel.dll" SelfReg="false"/>
+    <ROW File="System.Linq.Queryable.dll" Component_="System.Linq.Queryable.dll" FileName="SYSTE~43.DLL|System.Linq.Queryable.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Linq.Queryable.dll" SelfReg="false"/>
+    <ROW File="System.Memory.dll" Component_="System.Memory.dll" FileName="SYSTE~44.DLL|System.Memory.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Memory.dll" SelfReg="false"/>
+    <ROW File="System.Net.Http.dll" Component_="System.Net.Http.dll" FileName="SYSTE~45.DLL|System.Net.Http.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Net.Http.dll" SelfReg="false"/>
+    <ROW File="System.Net.Http.Rtc.dll" Component_="System.Net.Http.Rtc.dll" FileName="SYSTE~46.DLL|System.Net.Http.Rtc.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Net.Http.Rtc.dll" SelfReg="false"/>
+    <ROW File="System.Net.Http.WebRequest.dll" Component_="System.Net.Http.WebRequest.dll" FileName="SYSTE~47.DLL|System.Net.Http.WebRequest.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Net.Http.WebRequest.dll" SelfReg="false"/>
+    <ROW File="System.Net.NameResolution.dll" Component_="System.Net.NameResolution.dll" FileName="SYSTE~48.DLL|System.Net.NameResolution.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Net.NameResolution.dll" SelfReg="false"/>
+    <ROW File="System.Net.NetworkInformation.dll" Component_="System.Net.NetworkInformation.dll" FileName="SYSTE~49.DLL|System.Net.NetworkInformation.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Net.NetworkInformation.dll" SelfReg="false"/>
+    <ROW File="System.Net.Ping.dll" Component_="System.Net.Ping.dll" FileName="SYSTE~50.DLL|System.Net.Ping.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Net.Ping.dll" SelfReg="false"/>
+    <ROW File="System.Net.Primitives.dll" Component_="System.Net.Primitives.dll" FileName="SYSTE~51.DLL|System.Net.Primitives.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Net.Primitives.dll" SelfReg="false"/>
+    <ROW File="System.Net.Requests.dll" Component_="System.Net.Requests.dll" FileName="SYSTE~52.DLL|System.Net.Requests.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Net.Requests.dll" SelfReg="false"/>
+    <ROW File="System.Net.Security.dll" Component_="System.Net.Security.dll" FileName="SYSTE~53.DLL|System.Net.Security.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Net.Security.dll" SelfReg="false"/>
+    <ROW File="System.Net.Sockets.dll" Component_="System.Net.Sockets.dll" FileName="SYSTE~54.DLL|System.Net.Sockets.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Net.Sockets.dll" SelfReg="false"/>
+    <ROW File="System.Net.WebHeaderCollection.dll" Component_="System.Net.WebHeaderCollection.dll" FileName="SYSTE~55.DLL|System.Net.WebHeaderCollection.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Net.WebHeaderCollection.dll" SelfReg="false"/>
+    <ROW File="System.Net.WebSockets.Client.dll" Component_="System.Net.WebSockets.Client.dll" FileName="SYSTE~56.DLL|System.Net.WebSockets.Client.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Net.WebSockets.Client.dll" SelfReg="false"/>
+    <ROW File="System.Net.WebSockets.dll" Component_="System.Net.WebSockets.dll" FileName="SYSTE~57.DLL|System.Net.WebSockets.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Net.WebSockets.dll" SelfReg="false"/>
+    <ROW File="System.Numerics.Vectors.dll" Component_="System.Numerics.Vectors.dll" FileName="SYSTE~58.DLL|System.Numerics.Vectors.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Numerics.Vectors.dll" SelfReg="false"/>
+    <ROW File="System.ObjectModel.dll" Component_="System.ObjectModel.dll" FileName="SYSTE~59.DLL|System.ObjectModel.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.ObjectModel.dll" SelfReg="false"/>
+    <ROW File="System.Reflection.dll" Component_="System.Reflection.dll" FileName="SYSTE~60.DLL|System.Reflection.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Reflection.dll" SelfReg="false"/>
+    <ROW File="System.Reflection.Emit.dll" Component_="System.Reflection.Emit.dll" FileName="SYSTE~61.DLL|System.Reflection.Emit.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Reflection.Emit.dll" SelfReg="false"/>
+    <ROW File="System.Reflection.Emit.ILGeneration.dll" Component_="System.Reflection.Emit.ILGeneration.dll" FileName="SYSTE~62.DLL|System.Reflection.Emit.ILGeneration.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Reflection.Emit.ILGeneration.dll" SelfReg="false"/>
+    <ROW File="System.Reflection.Emit.Lightweight.dll" Component_="System.Reflection.Emit.Lightweight.dll" FileName="SYSTE~63.DLL|System.Reflection.Emit.Lightweight.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Reflection.Emit.Lightweight.dll" SelfReg="false"/>
+    <ROW File="System.Reflection.Extensions.dll" Component_="System.Reflection.Extensions.dll" FileName="SYSTE~64.DLL|System.Reflection.Extensions.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Reflection.Extensions.dll" SelfReg="false"/>
+    <ROW File="System.Reflection.Primitives.dll" Component_="System.Reflection.Primitives.dll" FileName="SYSTE~65.DLL|System.Reflection.Primitives.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Reflection.Primitives.dll" SelfReg="false"/>
+    <ROW File="System.Resources.Reader.dll" Component_="System.Resources.Reader.dll" FileName="SYSTE~66.DLL|System.Resources.Reader.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Resources.Reader.dll" SelfReg="false"/>
+    <ROW File="System.Resources.ResourceManager.dll" Component_="System.Resources.ResourceManager.dll" FileName="SYSTE~67.DLL|System.Resources.ResourceManager.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Resources.ResourceManager.dll" SelfReg="false"/>
+    <ROW File="System.Resources.Writer.dll" Component_="System.Resources.Writer.dll" FileName="SYSTE~68.DLL|System.Resources.Writer.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Resources.Writer.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.CompilerServices.Unsafe.dll" Component_="System.Runtime.CompilerServices.Unsafe.dll" FileName="SYSTE~69.DLL|System.Runtime.CompilerServices.Unsafe.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Runtime.CompilerServices.Unsafe.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.CompilerServices.VisualC.dll" Component_="System.Runtime.CompilerServices.VisualC.dll" FileName="SYSTE~70.DLL|System.Runtime.CompilerServices.VisualC.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Runtime.CompilerServices.VisualC.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.dll" Component_="System.Runtime.dll" FileName="SYSTE~71.DLL|System.Runtime.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Runtime.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.Extensions.dll" Component_="System.Runtime.Extensions.dll" FileName="SYSTE~72.DLL|System.Runtime.Extensions.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Runtime.Extensions.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.Handles.dll" Component_="System.Runtime.Handles.dll" FileName="SYSTE~73.DLL|System.Runtime.Handles.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Runtime.Handles.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.InteropServices.dll" Component_="System.Runtime.InteropServices.dll" FileName="SYSTE~74.DLL|System.Runtime.InteropServices.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Runtime.InteropServices.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.InteropServices.RuntimeInformation.dll" Component_="System.Runtime.InteropServices.RuntimeInformation.dll" FileName="SYSTE~75.DLL|System.Runtime.InteropServices.RuntimeInformation.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Runtime.InteropServices.RuntimeInformation.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.InteropServices.WindowsRuntime.dll" Component_="System.Runtime.InteropServices.WindowsRuntime.dll" FileName="SYSTE~76.DLL|System.Runtime.InteropServices.WindowsRuntime.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Runtime.InteropServices.WindowsRuntime.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.Numerics.dll" Component_="System.Runtime.Numerics.dll" FileName="SYSTE~77.DLL|System.Runtime.Numerics.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Runtime.Numerics.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.Serialization.Formatters.dll" Component_="System.Runtime.Serialization.Formatters.dll" FileName="SYSTE~78.DLL|System.Runtime.Serialization.Formatters.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Runtime.Serialization.Formatters.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.Serialization.Json.dll" Component_="System.Runtime.Serialization.Json.dll" FileName="SYSTE~79.DLL|System.Runtime.Serialization.Json.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Runtime.Serialization.Json.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.Serialization.Primitives.dll" Component_="System.Runtime.Serialization.Primitives.dll" FileName="SYSTE~80.DLL|System.Runtime.Serialization.Primitives.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Runtime.Serialization.Primitives.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.Serialization.Xml.dll" Component_="System.Runtime.Serialization.Xml.dll" FileName="SYSTE~81.DLL|System.Runtime.Serialization.Xml.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Runtime.Serialization.Xml.dll" SelfReg="false"/>
+    <ROW File="System.Security.Claims.dll" Component_="System.Security.Claims.dll" FileName="SYSTE~82.DLL|System.Security.Claims.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Security.Claims.dll" SelfReg="false"/>
+    <ROW File="System.Security.Cryptography.Algorithms.dll" Component_="System.Security.Cryptography.Algorithms.dll" FileName="SYSTE~83.DLL|System.Security.Cryptography.Algorithms.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Security.Cryptography.Algorithms.dll" SelfReg="false"/>
+    <ROW File="System.Security.Cryptography.Csp.dll" Component_="System.Security.Cryptography.Csp.dll" FileName="SYSTE~84.DLL|System.Security.Cryptography.Csp.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Security.Cryptography.Csp.dll" SelfReg="false"/>
+    <ROW File="System.Security.Cryptography.Encoding.dll" Component_="System.Security.Cryptography.Encoding.dll" FileName="SYSTE~85.DLL|System.Security.Cryptography.Encoding.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Security.Cryptography.Encoding.dll" SelfReg="false"/>
+    <ROW File="System.Security.Cryptography.Primitives.dll" Component_="System.Security.Cryptography.Primitives.dll" FileName="SYSTE~86.DLL|System.Security.Cryptography.Primitives.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Security.Cryptography.Primitives.dll" SelfReg="false"/>
+    <ROW File="System.Security.Cryptography.X509Certificates.dll" Component_="System.Security.Cryptography.X509Certificates.dll" FileName="SYSTE~87.DLL|System.Security.Cryptography.X509Certificates.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Security.Cryptography.X509Certificates.dll" SelfReg="false"/>
+    <ROW File="System.Security.Principal.dll" Component_="System.Security.Principal.dll" FileName="SYSTE~88.DLL|System.Security.Principal.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Security.Principal.dll" SelfReg="false"/>
+    <ROW File="System.Security.SecureString.dll" Component_="System.Security.SecureString.dll" FileName="SYSTE~89.DLL|System.Security.SecureString.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Security.SecureString.dll" SelfReg="false"/>
+    <ROW File="System.ServiceModel.Duplex.dll" Component_="System.ServiceModel.Duplex.dll" FileName="SYSTE~90.DLL|System.ServiceModel.Duplex.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.ServiceModel.Duplex.dll" SelfReg="false"/>
+    <ROW File="System.ServiceModel.Http.dll" Component_="System.ServiceModel.Http.dll" FileName="SYSTE~91.DLL|System.ServiceModel.Http.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.ServiceModel.Http.dll" SelfReg="false"/>
+    <ROW File="System.ServiceModel.NetTcp.dll" Component_="System.ServiceModel.NetTcp.dll" FileName="SYSTE~92.DLL|System.ServiceModel.NetTcp.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.ServiceModel.NetTcp.dll" SelfReg="false"/>
+    <ROW File="System.ServiceModel.Primitives.dll" Component_="System.ServiceModel.Primitives.dll" FileName="SYSTE~93.DLL|System.ServiceModel.Primitives.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.ServiceModel.Primitives.dll" SelfReg="false"/>
+    <ROW File="System.ServiceModel.Security.dll" Component_="System.ServiceModel.Security.dll" FileName="SYSTE~94.DLL|System.ServiceModel.Security.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.ServiceModel.Security.dll" SelfReg="false"/>
+    <ROW File="System.Text.Encoding.dll" Component_="System.Text.Encoding.dll" FileName="SYSTE~95.DLL|System.Text.Encoding.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Text.Encoding.dll" SelfReg="false"/>
+    <ROW File="System.Text.Encoding.Extensions.dll" Component_="System.Text.Encoding.Extensions.dll" FileName="SYSTE~96.DLL|System.Text.Encoding.Extensions.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Text.Encoding.Extensions.dll" SelfReg="false"/>
+    <ROW File="System.Text.RegularExpressions.dll" Component_="System.Text.RegularExpressions.dll" FileName="SYSTE~97.DLL|System.Text.RegularExpressions.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Text.RegularExpressions.dll" SelfReg="false"/>
+    <ROW File="System.Threading.dll" Component_="System.Threading.dll" FileName="SYSTE~98.DLL|System.Threading.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Threading.dll" SelfReg="false"/>
+    <ROW File="System.Threading.Overlapped.dll" Component_="System.Threading.Overlapped.dll" FileName="SYSTE~99.DLL|System.Threading.Overlapped.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Threading.Overlapped.dll" SelfReg="false"/>
+    <ROW File="System.Threading.Tasks.dll" Component_="System.Threading.Tasks.dll" FileName="SYST~100.DLL|System.Threading.Tasks.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Threading.Tasks.dll" SelfReg="false"/>
+    <ROW File="System.Threading.Tasks.Parallel.dll" Component_="System.Threading.Tasks.Parallel.dll" FileName="SYST~101.DLL|System.Threading.Tasks.Parallel.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Threading.Tasks.Parallel.dll" SelfReg="false"/>
+    <ROW File="System.Threading.Thread.dll" Component_="System.Threading.Thread.dll" FileName="SYST~102.DLL|System.Threading.Thread.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Threading.Thread.dll" SelfReg="false"/>
+    <ROW File="System.Threading.ThreadPool.dll" Component_="System.Threading.ThreadPool.dll" FileName="SYST~103.DLL|System.Threading.ThreadPool.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Threading.ThreadPool.dll" SelfReg="false"/>
+    <ROW File="System.Threading.Timer.dll" Component_="System.Threading.Timer.dll" FileName="SYST~104.DLL|System.Threading.Timer.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Threading.Timer.dll" SelfReg="false"/>
+    <ROW File="System.ValueTuple.dll" Component_="System.ValueTuple.dll" FileName="SYST~105.DLL|System.ValueTuple.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.ValueTuple.dll" SelfReg="false"/>
+    <ROW File="System.Xml.ReaderWriter.dll" Component_="System.Xml.ReaderWriter.dll" FileName="SYST~106.DLL|System.Xml.ReaderWriter.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Xml.ReaderWriter.dll" SelfReg="false"/>
+    <ROW File="System.Xml.XDocument.dll" Component_="System.Xml.XDocument.dll" FileName="SYST~107.DLL|System.Xml.XDocument.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Xml.XDocument.dll" SelfReg="false"/>
+    <ROW File="System.Xml.XmlDocument.dll" Component_="System.Xml.XmlDocument.dll" FileName="SYST~108.DLL|System.Xml.XmlDocument.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Xml.XmlDocument.dll" SelfReg="false"/>
+    <ROW File="System.Xml.XmlSerializer.dll" Component_="System.Xml.XmlSerializer.dll" FileName="SYST~109.DLL|System.Xml.XmlSerializer.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Xml.XmlSerializer.dll" SelfReg="false"/>
+    <ROW File="System.Xml.XPath.dll" Component_="System.Xml.XPath.dll" FileName="SYST~110.DLL|System.Xml.XPath.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Xml.XPath.dll" SelfReg="false"/>
+    <ROW File="System.Xml.XPath.XDocument.dll" Component_="System.Xml.XPath.XDocument.dll" FileName="SYST~111.DLL|System.Xml.XPath.XDocument.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\System.Xml.XPath.XDocument.dll" SelfReg="false"/>
+    <ROW File="Ubiety.Dns.Core.dll" Component_="Ubiety.Dns.Core.dll" FileName="UBIETY~1.DLL|Ubiety.Dns.Core.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\Ubiety.Dns.Core.dll" SelfReg="false"/>
+    <ROW File="Zstandard.Net.dll" Component_="Zstandard.Net.dll" FileName="ZSTAND~1.DLL|Zstandard.Net.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\Zstandard.Net.dll" SelfReg="false"/>
+    <ROW File="BlitzGroupApp.exe" Component_="BlitzGroupApp.exe" FileName="BLITZG~1.EXE|Blitz Group App.exe" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\Blitz Group App.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="BlitzGroupApp.exe.config" Component_="BlitzGroupApp.exe.config" FileName="BLITZG~1.CON|Blitz Group App.exe.config" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\Blitz Group App.exe.config" SelfReg="false"/>
+    <ROW File="blitzicon.ico" Component_="BlitzGroupApp.exe.config" FileName="BLITZ-~1.ICO|blitz-icon.ico" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\blitz-icon.ico" SelfReg="false"/>
+    <ROW File="BouncyCastle.Crypto.dll" Component_="BouncyCastle.Crypto.dll" FileName="BOUNCY~1.DLL|BouncyCastle.Crypto.dll" Attributes="0" SourcePath="C:\Program Files (x86)\NBService\BlitzSetup\BouncyCastle.Crypto.dll" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
+    <ROW TimeStampUrl="http://timestamp.digicert.com" SignerDescription="[|ProductName]" DescriptionUrl="https://blitzzgroup.com" SignOptions="7" SignTool="0" UseSha256="1" Thumbprint="16dc1bc0bb8f8b1e96bca00b327b35e8144ef856 Subject: TestCert_2022-1-29_13-28-46&#10;Issuer: TestCert_2022-1-29_13-28-46&#10;Valid from 01/29/2022 to 01/29/2023&#10;User\MY"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="InstallDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\InstallDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\LicenseAgreementDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;surface\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;surface\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\VerifyRepairDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="ExternalUICleaner.dll" SourcePath="&lt;AI_CUSTACTS&gt;ExternalUICleaner.dll"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="ShortcutFlags.dll" SourcePath="&lt;AI_CUSTACTS&gt;ShortcutFlags.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="CustomizeDlg" Control="CustomizeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1" TextLocId="-" HelpLocId="-" ExtDataLocId="-"/>
+    <ROW Dialog_="MsiRMFilesInUse" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="MsiRMFilesInUse#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="PatchWelcomeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1" TextLocId="-" HelpLocId="-" ExtDataLocId="-"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="ProductNameTitle" Type="Text" X="83" Y="21" Width="245" Height="50" Attributes="196611" Text="[ProductName]" TextStyle="[ProductNameForSplash]" Order="600" TextLocId="Metro.Control.Text.ProductName" MsiKey="PatchWelcomeDlg#ProductNameTitle"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="CompanyText" Type="Text" X="83" Y="16" Width="191" Height="12" Attributes="196611" Text="[Manufacturer]" TextStyle="[ManufacturerFont]" Order="700" TextLocId="Metro.Control.Text.Manufacturer" MsiKey="PatchWelcomeDlg#CompanyText"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="ProductLogo" Type="Bitmap" X="17" Y="5" Width="59" Height="63" Attributes="1" Text="[AppLogoIcon]" Order="800" MsiKey="PatchWelcomeDlg#ProductLogo"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="VerifyReadyDlg#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Back" Type="PushButton" X="5" Y="381" Width="11" Height="11" Attributes="2" Text="Control.Text.VerifyReadyDlg#Back" Help="Back|" Order="200" TextLocId="Control.Text.VerifyReadyDlg#Back" HelpLocId="Air.Control.Help#Back" MsiKey="VerifyReadyDlg#Back" Options="1" ExtType="PushButton" ExtData="[ButtonText_Back]" ExtDataLocId="-"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="ReadyToInstall" Type="Text" X="17" Y="105" Width="312" Height="19" Attributes="196611" Text="Ready to Install" TextStyle="[SubTitleStyle]" Order="400" TextLocId="Control.Text.VerifyReadyDlg#Title" MsiKey="VerifyReadyDlg#ReadyToInstall"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="Text_2" Type="Text" X="17" Y="139" Width="312" Height="100" Attributes="65539" Text="The [Wizard] is ready to begin the [ProductName] installation" Order="500" TextLocId="Control.Text.VerifyReadyDlg#Description" MsiKey="VerifyReadyDlg#Text_2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="InstallButton" Type="ImageButton" X="251" Y="359" Width="78" Height="28" Attributes="3" Text="[metrobuttonimage]" TextStyle="[MetroButtonText]" Order="600" MsiKey="VerifyReadyDlg#InstallButton" ExtType="ImageButton" ExtData="INSTALL" ExtDataLocId="Metro.Control.ExtData.VerifyReadyDlg#InstallButton"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="ProductNameTitle" Type="Text" X="83" Y="21" Width="245" Height="50" Attributes="196611" Text="[ProductName]" TextStyle="[ProductNameForSplash]" Order="700" TextLocId="Metro.Control.Text.ProductName" MsiKey="VerifyReadyDlg#ProductNameTitle"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="CompanyText" Type="Text" X="83" Y="16" Width="191" Height="12" Attributes="196611" Text="[Manufacturer]" TextStyle="[ManufacturerFont]" Order="800" TextLocId="Metro.Control.Text.Manufacturer" MsiKey="VerifyReadyDlg#CompanyText"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="ProductLogo" Type="Bitmap" X="17" Y="5" Width="59" Height="63" Attributes="1" Text="[AppLogoIcon]" Order="900" MsiKey="VerifyReadyDlg#ProductLogo"/>
+    <ROW Dialog_="VerifyReadyDlg" Control="AdvInst" Type="Text" X="5" Y="388" Width="74" Height="11" Attributes="196611" Text="Advanced Installer" TextStyle="[BrandingStyle]" Order="1000" MsiKey="VerifyReadyDlg#AdvInst"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control="Cancel" Type="ImageButton" X="163" Y="359" Width="78" Height="28" Attributes="2" Text="[NextCancelButtons]" TextStyle="[MetroButtonText]" Order="100" MsiKey="VerifyRemoveDlg#Cancel" Options="1" ExtType="ImageButton" ExtData="[ButtonText_Cancel]" ExtDataLocId="-"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Bitmap" Type="Bitmap" X="0" Y="0" Width="345" Height="400" Attributes="1" Text="[Background]" Order="100" MsiKey="VerifyRepairDlg#Bitmap"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Repair" Type="ImageButton" X="251" Y="359" Width="78" Height="28" Attributes="3" Text="[metrobuttonimage]" TextStyle="[MetroButtonText]" Order="200" MsiKey="VerifyRepairDlg#Repair" Options="1" ExtType="ImageButton" ExtData="&amp;Repair" ExtDataLocId="Metro.Control.ExtData.VerifyRepairDlg#Repair"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="301"/>
+    <ROW Dialog_="InstallDlg" Control_="YouMustAgreeCtrl" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="301"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="InstallDlg" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="101"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="699"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="199" Options="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="699"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="99"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_INSTALL AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="302" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_INSTALL AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="303" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_INSTALL AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="304" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_INSTALL" Ordering="101" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_INSTALL" Ordering="102" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_INSTALL" Ordering="103" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="InstallDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_INSTALL" Ordering="104" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="YouMustAgreeCtrl" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL" Ordering="302" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="YouMustAgreeCtrl" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL" Ordering="303" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL" Ordering="0" Options="2"/>
+    <ROW Dialog_="InstallDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL" Ordering="1" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_INSTALL AND AiLicenseAgreement AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="102" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_INSTALL AND AiLicenseAgreement AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="103" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_INSTALL AND AiLicenseAgreement AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="104" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="101" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="102" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="103" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="LicenseAgreementDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="104" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="2" Options="2"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL AND AiLicenseAgreement" Ordering="3" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_MAINT AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="102" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="EnableRollback" Argument="False" Condition="AI_MAINT AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="103" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Modify" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_MAINT AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="104" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_MAINT" Ordering="0" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_MAINT" Ordering="1" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_MAINT" Ordering="2" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="CustomizeDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_MAINT" Ordering="3" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_MAINT" Ordering="2" Options="2"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_MAINT" Ordering="3" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_PATCH AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="202" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_PATCH AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="203" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_PATCH AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="204" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_PATCH" Ordering="0" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_PATCH" Ordering="1" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_PATCH" Ordering="2" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_PATCH" Ordering="3" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_PATCH" Ordering="0" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_PATCH" Ordering="1" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="BlitzGroupApp_1_Dir" Component_="BlitzGroupApp" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_ApplyShortcutFlags" Type="3073" Source="ShortcutFlags.dll" Target="UpdateShortcutFlags" WithoutSeq="true"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ChooseTextStyles" Type="1" Source="aicustact.dll" Target="ChooseTextStyles"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="AI_ExtractFiles" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DoRemoveExternalUIStub" Type="3585" Source="ExternalUICleaner.dll" Target="DoRemoveExternalUIStub" WithoutSeq="true"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_EstimateExtractFiles" Type="1" Source="Prereq.dll" Target="EstimateExtractFiles"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1025" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_GetArpIconPath" Type="1" Source="aicustact.dll" Target="GetArpIconPath"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PinShortcuts" Type="1" Source="ShortcutFlags.dll" Target="PinShortcuts"/>
+    <ROW Action="AI_PinToStartScreen" Type="1025" Source="ShortcutFlags.dll" Target="PinToStartScreen" WithoutSeq="true"/>
+    <ROW Action="AI_PinToTaskbar" Type="1025" Source="ShortcutFlags.dll" Target="PinToTaskbar" WithoutSeq="true"/>
+    <ROW Action="AI_PrepareShortcutFlags" Type="1" Source="ShortcutFlags.dll" Target="PrepareActionData"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_RemoveExternalUIStub" Type="1" Source="ExternalUICleaner.dll" Target="RemoveExternalUIStub"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_RunFinishActions" Type="1" Source="aicustact.dll" Target="RunFinishActions" WithoutSeq="true"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_UPDATER_UNINSTALL" Type="82" Source="updater.exe" Target="/clean silent"/>
+    <ROW Action="AI_UnpinFromStartScreen" Type="1025" Source="ShortcutFlags.dll" Target="UnpinFromStartScreen" WithoutSeq="true"/>
+    <ROW Action="AI_UnpinFromTaskbar" Type="1025" Source="ShortcutFlags.dll" Target="UnpinFromTaskbar" WithoutSeq="true"/>
+    <ROW Action="AI_UnpinShortcuts" Type="1" Source="ShortcutFlags.dll" Target="UnpinShortcuts"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
+    <ROW Feature_="MainFeature" Component_="updater.exe"/>
+    <ROW Feature_="MainFeature" Component_="EntityFramework.dll"/>
+    <ROW Feature_="MainFeature" Component_="EntityFramework.SqlServer.dll"/>
+    <ROW Feature_="MainFeature" Component_="FontAwesome.Sharp.dll"/>
+    <ROW Feature_="MainFeature" Component_="Google.Protobuf.dll"/>
+    <ROW Feature_="MainFeature" Component_="Guna.UI2.dll"/>
+    <ROW Feature_="MainFeature" Component_="K4os.Compression.LZ4.dll"/>
+    <ROW Feature_="MainFeature" Component_="K4os.Compression.LZ4.Streams.dll"/>
+    <ROW Feature_="MainFeature" Component_="K4os.Hash.xxHash.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Win32.Primitives.dll"/>
+    <ROW Feature_="MainFeature" Component_="MySql.Data.dll"/>
+    <ROW Feature_="MainFeature" Component_="MySql.Data.EntityFramework.dll"/>
+    <ROW Feature_="MainFeature" Component_="netstandard.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.AppContext.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Buffers.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Collections.Concurrent.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Collections.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Collections.NonGeneric.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Collections.Specialized.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ComponentModel.Annotations.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ComponentModel.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ComponentModel.EventBasedAsync.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ComponentModel.Primitives.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ComponentModel.TypeConverter.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Console.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.Common.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Diagnostics.Contracts.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Diagnostics.Debug.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Diagnostics.FileVersionInfo.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Diagnostics.Process.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Diagnostics.StackTrace.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Diagnostics.TextWriterTraceListener.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Diagnostics.Tools.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Diagnostics.TraceSource.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Diagnostics.Tracing.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Drawing.Primitives.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Dynamic.Runtime.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Globalization.Calendars.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Globalization.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Globalization.Extensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.Compression.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.Compression.FileSystem.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.Compression.ZipFile.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.FileSystem.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.FileSystem.DriveInfo.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.FileSystem.Primitives.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.FileSystem.Watcher.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.IsolatedStorage.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.MemoryMappedFiles.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.Pipes.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.IO.UnmanagedMemoryStream.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Linq.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Linq.Expressions.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Linq.Parallel.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Linq.Queryable.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Memory.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.Http.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.Http.Rtc.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.Http.WebRequest.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.NameResolution.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.NetworkInformation.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.Ping.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.Primitives.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.Requests.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.Security.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.Sockets.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.WebHeaderCollection.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.WebSockets.Client.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Net.WebSockets.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Numerics.Vectors.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ObjectModel.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Reflection.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Reflection.Emit.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Reflection.Emit.ILGeneration.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Reflection.Emit.Lightweight.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Reflection.Extensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Reflection.Primitives.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Resources.Reader.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Resources.ResourceManager.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Resources.Writer.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.CompilerServices.VisualC.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.Extensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.Handles.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.InteropServices.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.InteropServices.RuntimeInformation.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.InteropServices.WindowsRuntime.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.Numerics.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.Serialization.Formatters.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.Serialization.Json.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.Serialization.Primitives.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.Serialization.Xml.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Claims.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Cryptography.Algorithms.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Cryptography.Csp.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Cryptography.Encoding.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Cryptography.Primitives.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Cryptography.X509Certificates.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Principal.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.SecureString.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ServiceModel.Duplex.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ServiceModel.Http.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ServiceModel.NetTcp.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ServiceModel.Primitives.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ServiceModel.Security.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Text.Encoding.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Text.Encoding.Extensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Text.RegularExpressions.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Threading.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Threading.Overlapped.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Threading.Tasks.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Threading.Tasks.Parallel.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Threading.Thread.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Threading.ThreadPool.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Threading.Timer.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ValueTuple.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Xml.ReaderWriter.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Xml.XDocument.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Xml.XmlDocument.dll"/>
+    <ROW Feature_="MainFeature" Component_="BlitzGroupApp"/>
+    <ROW Feature_="MainFeature" Component_="AI_CustomARPName"/>
+    <ROW Feature_="MainFeature" Component_="System.Xml.XmlSerializer.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Xml.XPath.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Xml.XPath.XDocument.dll"/>
+    <ROW Feature_="MainFeature" Component_="Ubiety.Dns.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="Zstandard.Net.dll"/>
+    <ROW Feature_="MainFeature" Component_="BlitzGroupApp.exe"/>
+    <ROW Feature_="MainFeature" Component_="BlitzGroupApp.exe.config"/>
+    <ROW Feature_="MainFeature" Component_="BouncyCastle.Crypto.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="BlitzGroupApp.exe" SourcePath="..\..\Downloads\blitz-icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="AppDir" FileName="BLITZG~1.INI|BlitzGroupUpdate.ini" DirProperty="APPDIR" Section="General" Key="AppDir" Value="[APPDIR]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="ApplicationName" FileName="BLITZG~1.INI|BlitzGroupUpdate.ini" DirProperty="APPDIR" Section="General" Key="ApplicationName" Value="[ProductName]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="ApplicationVersion" FileName="BLITZG~1.INI|BlitzGroupUpdate.ini" DirProperty="APPDIR" Section="General" Key="ApplicationVersion" Value="[ProductVersion]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="CheckFrequency" FileName="BLITZG~1.INI|BlitzGroupUpdate.ini" DirProperty="APPDIR" Section="General" Key="CheckFrequency" Value="2" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="CompanyName" FileName="BLITZG~1.INI|BlitzGroupUpdate.ini" DirProperty="APPDIR" Section="General" Key="CompanyName" Value="[Manufacturer]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="DefaultCommandLine" FileName="BLITZG~1.INI|BlitzGroupUpdate.ini" DirProperty="APPDIR" Section="General" Key="DefaultCommandLine" Value="/checknow" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="DownloadsFolder" FileName="BLITZG~1.INI|BlitzGroupUpdate.ini" DirProperty="APPDIR" Section="General" Key="DownloadsFolder" Value="[CommonAppDataFolder][Manufacturer]\[ProductName]\updates\" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="Flags" FileName="BLITZG~1.INI|BlitzGroupUpdate.ini" DirProperty="APPDIR" Section="General" Key="Flags" Value="NoDisableAutoCheck|PerMachine|ShowConfigOptionsButton" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="ID" FileName="BLITZG~1.INI|BlitzGroupUpdate.ini" DirProperty="APPDIR" Section="General" Key="ID" Value="[UpgradeCode]" Action="0" Component_="updater.exe"/>
+    <ROW IniFile="URL" FileName="BLITZG~1.INI|BlitzGroupUpdate.ini" DirProperty="APPDIR" Section="General" Key="URL" Value="https://admin.blitzzgroup.com/updatesBlitz.txt" Action="0" Component_="updater.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1502"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="3998" Builds="DefaultBuild"/>
+    <ROW Action="AI_DATA_SETTER" Sequence="3997"/>
+    <ROW Action="AI_EstimateExtractFiles" Sequence="3999" Builds="DefaultBuild"/>
+    <ROW Action="AI_UPDATER_UNINSTALL" Condition="($updater.exe = 2) AND (?updater.exe = 3) AND NOT (UPGRADINGPRODUCTCODE)" Sequence="1551"/>
+    <ROW Action="AI_PrepareShortcutFlags" Condition="(VersionNT &gt; 501) AND ((NOT Installed) OR (Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;)))" Sequence="4501"/>
+    <ROW Action="AI_PinShortcuts" Condition="(VersionNT &gt; 600) AND ((NOT Installed) OR (Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;)))" Sequence="6499"/>
+    <ROW Action="AI_UnpinShortcuts" Condition="(VersionNT &gt; 600) AND (REMOVE = &quot;ALL&quot;)" Sequence="3199"/>
+    <ROW Action="AI_GetArpIconPath" Sequence="1401"/>
+    <ROW Action="AI_RemoveExternalUIStub" Condition="(REMOVE=&quot;ALL&quot;) AND ((VersionNT &gt; 500) OR((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Sequence="1501"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="InstallDlg" Condition="AI_INSTALL" Sequence="1230" SeqType="3" MsiKey="WelcomeDlg"/>
+    <ROW Action="MaintenanceTypeDlg" Condition="AI_MAINT" Sequence="1250" SeqType="3" MsiKey="MaintenanceTypeDlg"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+    <ROW Action="AI_ChooseTextStyles" Sequence="74"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="Comments" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Comments" Value="[ARPCOMMENTS]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Contact" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Contact" Value="[ARPCONTACT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayIcon" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayIcon" Value="[ARP_ICON_PATH]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayName" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayName" Value="[AI_PRODUCTNAME_ARP]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayVersion" Value="[ProductVersion]" Component_="AI_CustomARPName"/>
+    <ROW Registry="EstimatedSize" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="EstimatedSize" Value="#[AI_ARP_SIZE]" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpLink" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpLink" Value="[ARPHELPLINK]" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpTelephone" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpTelephone" Value="[ARPHELPTELEPHONE]" Component_="AI_CustomARPName"/>
+    <ROW Registry="InstallLocation" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="InstallLocation" Value="[APPDIR]" Component_="AI_CustomARPName"/>
+    <ROW Registry="ModifyPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="ModifyPath" Value="[AI_UNINSTALLER] /i [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="NoRepair" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="NoRepair" Value="#1" Component_="AI_CustomARPName"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Publisher" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Publisher" Value="[Manufacturer]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Readme" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Readme" Value="[ARPREADME]" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLInfoAbout" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLInfoAbout" Value="[ARPURLINFOABOUT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLUpdateInfo" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLUpdateInfo" Value="[ARPURLUPDATEINFO]" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallPath" Value="[AI_UNINSTALLER] /x [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallString" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallString" Value="[AI_UNINSTALLER] /x [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+    <ROW Registry="VersionMajor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMajor" Value="#1" Component_="AI_CustomARPName"/>
+    <ROW Registry="VersionMinor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMinor" Value="#0" Component_="AI_CustomARPName"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="BlitzGroupApp" Directory_="DesktopFolder" Name="BLITZG~1|Blitz Group App" Component_="BlitzGroupApp.exe" Target="[#BlitzGroupApp.exe]" Hotkey="0" Icon_="BlitzGroupApp.exe" IconIndex="0" ShowCmd="1" WkDir="BlitzGroupApp_Dir"/>
+    <ROW Shortcut="BlitzGroupApp_1" Directory_="BlitzGroupApp_1_Dir" Name="BLITZG~2|Blitz Group App" Component_="BlitzGroupApp.exe" Target="[#BlitzGroupApp.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="BlitzGroupApp_Dir"/>
+    <ROW Shortcut="BlitzGroupUpdate" Directory_="BlitzGroupApp_1_Dir" Name="BLITZG~1|BlitzGroupUpdate" Component_="updater.exe" Target="[#updater.exe]" Hotkey="0" Icon_="BlitzGroupApp.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="BlitzGroupUpdate_1" Directory_="DesktopFolder" Name="BLITZG~2|BlitzGroupUpdate" Component_="updater.exe" Target="[#updater.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="BlitzGroupUpdate_2" Directory_="StartupFolder" Name="BLITZG~1|BlitzGroupUpdate" Component_="updater.exe" Target="[#updater.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="surface"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.UpdaterComponent">
+    <ROW Updater="updater.exe" URL="URL" SearchFreq="CheckFrequency" DownloadsFolder="DownloadsFolder" ID="ID" TargetDir="AppDir" AppName="ApplicationName" AppVersion="ApplicationVersion" CompanyName="CompanyName" DefCommandLine="DefaultCommandLine" Flags="Flags" IconPath="..\..\Downloads\blitz-icon.ico" IconIndex="0" UnistallCASeq="AI_UPDATER_UNINSTALL" Description="[|UpdaterName] [|ProductVersion]"/>
+  </COMPONENT>
+</DOCUMENT>
